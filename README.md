@@ -1,90 +1,135 @@
-# Particle Energy Analysis (Python, Pandas, NumPy, Matplotlib)
+# Project Structure
+particle-energy-analysis/
+├── data/
+│   ├── particle.csv
+│   └── cleaned_particle_data.csv
+├── src/
+│   └── particleAnalysis.py
+├── README.md
+└── requirements.txt
 
-This project analyzes particle collision data similar to what is seen in CERN experiments.  
-It uses Python, NumPy, Pandas, and Matplotlib to clean, analyze, group, and visualize particle energies.
+# Installation
 
----
+Install the required Python packages:
 
-#  Dataset Description
-The dataset `particle.csv` contains:
-- `event` – event number
-- `particle_id` – PDG particle code
-- `particle_name` – human-readable name
-- `energy` – particle energy (GeV)
-- `px`, `py`, `pz` – momentum components
-- `charge` – particle charge
+pip install -r requirements.txt
 
-Particles include electrons, muons, photons, pions, and protons.
 
----
+# Dependencies:
 
-##  What the Project Does..
+pandas
 
-#  1. Load and inspect data
-- `head()`, `info()`, `describe()`
-- Checks missing values
-- Calculates mean and standard deviation
+numpy
 
-# 2. Clean the data
-- Drops missing rows
-- Shows before/after cleaning
+matplotlib
 
-# 3. Analyze energies
-- Computes mean and std
-- Detects high-energy particles
-- Groups particles into:
-  - low energy
-  - medium energy
-  - high energy
+# How to Run
 
-# 4. Visualize energies
-- Histogram of energies
-- Line plot of energy trends
+Run the analysis script from your terminal:
 
-# 5. Save cleaned dataset
-- Creates `cleaned_particle_data.csv`
+# Navigate to the project
+cd particle-energy-analysis
 
----
+# Go into the source folder
+cd src
 
-## Visual Outputs....
+# Run the script
+python particleAnalysis.py
 
-# Histogram  
-Shows how particle energies are distributed.
 
-# Line Plot  
-Shows energy changes across events.
+The script will:
 
----
+Load the particle energy dataset
 
-# Tools Used
-- Python
-- Pandas
-- NumPy
-- Matplotlib
+Clean missing values
 
----
+Compute mean and standard deviation
 
-# Skills Demonstrated
-- Data cleaning
-- Scientific data analysis
-- Statistical grouping
-- Data visualization
-- CSV processing
-- Pandas advanced operations
+Detect high-energy particle events
 
----
+Group energies into low/medium/high
 
-# Files Included
+Generate scientific plots
 
-- `particle.csv` — dataset  
-- `particleAnalysis.py` — project code  
-- `cleaned_particle_data.csv` — cleaned data output  
-- `README.md` — this project report  
+Save cleaned dataset
 
----
+Output appears in:
 
-# --- Summary ---
+data/cleaned_particle_data.csv
 
-This project simulates a beginner-level particle physics analysis similar to real experiments at CERN.  
-It shows how to read, clean, analyze, visualize, and save scientific data using Python.
+# Features & Methods
+1. Data Loading & Overview
+
+read_csv()
+
+head()
+
+info()
+
+describe()
+
+2. Data Cleaning
+
+Remove missing rows
+
+Fill missing values
+
+3. Statistical Analysis
+
+Mean
+
+Standard deviation
+
+High-energy threshold
+
+Grouping using pd.cut()
+
+4. Visualization
+
+Histogram
+
+Line plot
+
+5. Saved Output
+
+Cleaned dataset in /data
+
+# What This Project Demonstrates
+
+Reading scientific datasets
+
+Cleaning noisy data
+
+Using Pandas & NumPy
+
+Producing visual analysis
+
+Writing organized Python code
+
+Creating a reproducible project
+
+Structuring folders professionally
+
+# Future Improvements
+
+Gaussian curve fitting
+
+More particle features
+
+Interactive plots
+
+Jupyter Notebook version
+
+Monte Carlo simulation
+
+# Author
+
+Mahsuba(Mahim Islam)
+Beginner data analyst with interest in physics & scientific computing.
+
+📜 License
+
+MIT License.
+
+
 
