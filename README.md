@@ -58,7 +58,7 @@ Output appears in:
 data/cleaned_particle_data.csv
 
 # Features & Methods
-1.Data Loading & Overview
+## 1.Data Loading & Overview
 
 read_csv()
 
@@ -68,13 +68,13 @@ info()
 
 describe()
 
-2.Data Cleaning
+## 2.Data Cleaning
 
 Remove missing rows
 
 Fill missing values
 
-3.Statistical Analysis
+## 3.Statistical Analysis
 
 Mean
 
@@ -84,13 +84,13 @@ High-energy threshold
 
 Grouping using pd.cut()
 
-4.Visualization
+## 4.Visualization
 
 Histogram
 
 Line plot
 
-5.Saved Output
+## 5.Saved Output
 
 Cleaned dataset in /data
 
@@ -130,6 +130,7 @@ Beginner data analyst with interest in physics & scientific computing.
 # License
 
 MIT License.
+
 
 
 
